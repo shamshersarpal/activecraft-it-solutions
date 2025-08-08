@@ -17,7 +17,8 @@ main {
   background-image: url(../images/hero-bg.png);
   background-size: cover; 
   background-repeat: no-repeat;
-  padding: 180px 0;
+  padding: 100px 0;
+  border-radius: 20px;
 }
 
 .tagSection{
@@ -58,4 +59,55 @@ main {
     --tw-bg-opacity: 1;
     background-color: rgb(20 20 20 / var(--tw-bg-opacity));
     border: solid 1px #232323;
+}
+
+.mobile-menu{
+  display: none;
+}
+.desktop-menu{
+  display: block;
+}
+
+/* Hide scroll bar in all browsers */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+.font-rd{
+  font-family: "Rajdhani", sans-serif !important;
+}
+@media only screen and (max-width: 767px) {
+  .mobile-menu{
+  display: block;
+}
+.desktop-menu{
+  display: none;
+}
+}
+
+.testo-clients{
+  background-image: url('../images/testo.png');
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.achievements{
+background-image: url('../images/achievements-bg.png');
+  background-position: center;
+  background-size: contain;
+  padding: 100px 0;
+}
+
+.contactForm{
+  background-image: url('../images/contactForm.png');
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
 }
