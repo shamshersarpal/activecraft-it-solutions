@@ -103,7 +103,7 @@ export default function Header() {
                 </li>
                 <li>
                   <Link
-                    href="contact-us"
+                    href=""
                     className={`block py-2 px-3 rounded-sm md:p-0  ${
                       activeItem === " blog"
                         ? "md:bg-transparent md:text-[#ec8223]"
@@ -129,7 +129,7 @@ export default function Header() {
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
 
-            <Link href="contact-us">
+            <Link href="">
             <button
               type="button"
               className="  text-white bg-[#3E495B]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-6 py-3 text-center leading-none "
