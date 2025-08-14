@@ -9,7 +9,7 @@ export default function AboutCompany() {
             <p className="text-lg font-semibold text-[#A6A6A6] uppercase">
               About Company
             </p>
-            <h1 className="text-3xl font-bold text-[#404A5C]  mb-3">
+            <h1 className="text-3xl font-bold text-[#404A5C]  mb-3 wow animate__animated animate__fadeInUp">
               18 Years Experience in <br></br> IT SOLUTIONS
             </h1>
             <p className="text-[#545454]">

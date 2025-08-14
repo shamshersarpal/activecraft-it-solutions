@@ -111,3 +111,34 @@ background-image: url('../images/achievements-bg.png');
   background-size: cover;
   padding: 100px 0;
 }
+
+/* Custom Owl Carousel Nav Arrows */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.owl-theme .owl-nav button.owl-prev,
+.owl-theme .owl-nav button.owl-next {
+  background: orange !important;
+  color: white !important;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px !important;
+  transition: background 0.3s ease;
+}
+
+.owl-theme .owl-nav button.owl-prev:hover,
+.owl-theme .owl-nav button.owl-next:hover {
+  background: #ff9900 !important;
+}
+
+.owl-theme .owl-nav [class*="owl-"] span {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+}

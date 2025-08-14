@@ -1,11 +1,11 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
-export default function Contact(){
-    return(
-       <>
-       <Header/>
-        <section
+export default function Contact() {
+  return (
+    <>
+      <Header />
+      <section
         id="home"
         className="bg-no-repeat bg-cover relative -z-10 active"
       >
@@ -20,123 +20,132 @@ export default function Contact(){
 
       <section className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-4 py-20">
         <>
-  <div className="flex flex-col md:flex-row justify-center gap-6 mt-10">
-    {/* Email Card */}
-    <div className="bg-purple-500 text-white rounded-lg shadow-md p-6 flex items-center justify-center w-72">
-      <div className="flex flex-col items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 mb-3"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M16 12H8m0 0H6a2 2 0 00-2 2v0a2 2 0 002 2h12a2 2 0 002-2v0a2 2 0 00-2-2h-2m-4-6h.01"
-          />
-        </svg>
-        <p className="text-lg font-semibold">info@activecraft.com</p>
-      </div>
-    </div>
-    {/* Phone Card */}
-    <div className="bg-gradient-to-r from-red-500 to-orange-400 text-white rounded-lg shadow-md p-6 flex items-center justify-center w-72">
-      <div className="flex flex-col items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 mb-3"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.58 4.74a1 1 0 01-.216.992l-2.272 2.272a16 16 0 006.364 6.364l2.272-2.272a1 1 0 01.992-.216l4.74 1.58a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C10.477 21 3 13.523 3 5z"
-          />
-        </svg>
-        <p className="text-lg font-semibold">+1-646-797-2775</p>
-      </div>
-    </div>
-    {/* Skype Card */}
-    <div className="bg-cyan-600 text-white rounded-lg shadow-md p-6 flex items-center justify-center w-72">
-      <div className="flex flex-col items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 mb-3"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path d="M12 0C5.373 0 0 5.373 0 12c0 1.7.354 3.32.99 4.78l-.64 2.77a.75.75 0 00.92.92l2.77-.64A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
-        </svg>
-        <p className="text-lg font-semibold">activecraft@hotmail.com</p>
-      </div>
-    </div>
-  </div>
-  {/* Contact Form */}
-  <div className="w-full mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-    <form className="space-y-4">
-      <div className="grid grid-cols-2 gap-4">
-        <div>
-          <label className="block text-sm font-medium">First name*</label>
-          <input
-            type="text"
-            className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium">Last name*</label>
-          <input
-            type="text"
-            className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
-          />
-        </div>
-      </div>
-      <div className="grid grid-cols-2 gap-4">
-        <div>
-          <label className="block text-sm font-medium">Email*</label>
-          <input
-            type="email"
-            className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium">
-            Phone* (0123456789)
-          </label>
-          <input
-            type="tel"
-            className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
-          />
-        </div>
-      </div>
-      <div>
-        <label className="block text-sm font-medium">Message</label>
-        <textarea
-          className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
-          defaultValue={""}
-        />
-      </div>
-      
-      <button
-        type="submit"
-        className="bg-sky-500 text-white px-6 py-2 rounded-full hover:bg-sky-600"
-      >
-        Send Message
-      </button>
-    </form>
-    
-  </div>
-</>
+          <div className="flex flex-col md:flex-row justify-center gap-6 mt-10">
+            {/* Email Card */}
+            <div className="bg-purple-500 text-white rounded-lg shadow-md p-6 flex items-center justify-center w-72">
+              <div className="flex flex-col items-center">
+                <svg
+                  className="w-10 h-10 text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 5.983C3 4.888 3.895 4 5 4h14c1.105 0 2 .888 2 1.983v8.923a1.992 1.992 0 0 1-2 1.983h-6.6l-2.867 2.7c-.955.899-2.533.228-2.533-1.08v-1.62H5c-1.105 0-2-.888-2-1.983V5.983Zm5.706 3.809a1 1 0 1 0-1.412 1.417 1 1 0 1 0 1.412-1.417Zm2.585.002a1 1 0 1 1 .003 1.414 1 1 0 0 1-.003-1.414Zm5.415-.002a1 1 0 1 0-1.412 1.417 1 1 0 1 0 1.412-1.417Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
 
+                <p className="text-lg font-semibold">info@activecraft.com</p>
+              </div>
+            </div>
+            {/* Phone Card */}
+            <div className="bg-gradient-to-r from-red-500 to-orange-400 text-white rounded-lg shadow-md p-6 flex items-center justify-center w-72">
+              <div className="flex flex-col items-center">
+                <svg
+                  className="w-10 h-10 text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M6.97825 3.99999c-.3729 0-.74128.08169-1.07926.23934-.32394.15109-.61243.36845-.84696.63786-1.81892 1.82189-2.35302 3.87423-1.89899 5.93671.43916 1.9949 1.77747 3.8929 3.45642 5.572 1.67897 1.6791 3.57614 3.0176 5.57034 3.4591 2.0612.4563 4.1141-.0726 5.9396-1.8853.2705-.2348.4888-.524.6405-.8489.1581-.3387.2401-.7081.2401-1.0819 0-.3739-.082-.7432-.2401-1.0819-.1516-.3247-.3696-.6137-.6398-.8483l-1.2098-1.2106c-.5043-.5041-1.1879-.7872-1.9007-.7872-.7128 0-1.3968.2835-1.9011.7876l-.6178.6181c-.1512.1513-.3563.2363-.5701.2363-.2138 0-.4189-.085-.5701-.2363l-1.85336-1.8545c-.15117-.1513-.23609-.3565-.23609-.5704 0-.214.08493-.4192.23613-.5705l.61812-.61851c.5037-.50461.7867-1.18868.7867-1.90191s-.2833-1.39767-.7871-1.90228L8.90499 4.8778c-.23462-.26969-.5233-.48727-.84749-.63847-.33798-.15765-.70636-.23934-1.07925-.23934Z" />
+                  <path
+                    fillRule="evenodd"
+                    d="M18.0299 8.98132c0 .55229-.4477 1-1 .99999l-3.03-.00002c-.5522 0-1-.44772-1-1V5.99995c0-.55229.4478-1 1-1 .5523 0 1 .44771 1 1v.58112l3.3184-3.29111c.3921-.38892 1.0253-.38631 1.4142.00582.3889.39213.3863 1.02529-.0058 1.4142l-3.2984 3.27133h.6016c.5523.00001 1 .44773 1 1.00001Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+
+                <p className="text-lg font-semibold">+1-646-797-2775</p>
+              </div>
+            </div>
+            {/* Skype Card */}
+            <div className="bg-cyan-600 text-white rounded-lg shadow-md p-6 flex items-center justify-center w-72">
+              <div className="flex flex-col items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  fill="currentColor"
+                  className="bi bi-microsoft-teams h-10 w-10"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M9.186 4.797a2.42 2.42 0 1 0-2.86-2.448h1.178c.929 0 1.682.753 1.682 1.682zm-4.295 7.738h2.613c.929 0 1.682-.753 1.682-1.682V5.58h2.783a.7.7 0 0 1 .682.716v4.294a4.197 4.197 0 0 1-4.093 4.293c-1.618-.04-3-.99-3.667-2.35Zm10.737-9.372a1.674 1.674 0 1 1-3.349 0 1.674 1.674 0 0 1 3.349 0m-2.238 9.488-.12-.002a5.2 5.2 0 0 0 .381-2.07V6.306a1.7 1.7 0 0 0-.15-.725h1.792c.39 0 .707.317.707.707v3.765a2.6 2.6 0 0 1-2.598 2.598z" />
+                  <path d="M.682 3.349h6.822c.377 0 .682.305.682.682v6.822a.68.68 0 0 1-.682.682H.682A.68.68 0 0 1 0 10.853V4.03c0-.377.305-.682.682-.682Zm5.206 2.596v-.72h-3.59v.72h1.357V9.66h.87V5.945z" />
+                </svg>
+
+                <p className="text-lg font-semibold">activecraft@hotmail.com</p>
+              </div>
+            </div>
+          </div>
+          {/* Contact Form */}
+          <div className="w-full mx-auto mt-20 max-w-[840px] ">
+            <form className="space-y-4  mx-auto">
+              <div className="grid grid-cols-1 gap-4">
+                <div>
+                  <label className="block text-sm font-medium">
+                    First name*
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium">
+                    Last name*
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium">Email*</label>
+                  <input
+                    type="email"
+                    className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium">
+                    Phone* (0123456789)
+                  </label>
+                  <input
+                    type="tel"
+                    className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-medium">Message</label>
+                <textarea
+                  className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
+                  defaultValue={""}
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="  text-white bg-[#FF9900]  focus:ring-4 focus:outline-none focus:ring-blue-300  cursor-pointer font-medium rounded-full text-sm px-8 py-4 text-center leading-none mt-5 "
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </>
       </section>
 
-
-      <Footer/>
-       
-       </>
-    )
+      <Footer />
+    </>
+  );
 }
